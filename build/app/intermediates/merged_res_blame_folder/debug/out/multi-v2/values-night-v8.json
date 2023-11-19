@@ -4,7 +4,7 @@
             "outputFile": "com.example.aifashion.app-mergeDebugResources-20:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/chrislau/Desktop/FYP/aifashion/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/chrislau/Documents/GitHub/CSCI4998AGJ1/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

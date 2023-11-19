@@ -350,7 +350,24 @@
             "outputFile": "com.example.aifashion.app-merged_res-22:/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/chrislau/Desktop/FYP/aifashion/android/app/src/main/res/values/styles.xml",
+                    "source": "/Users/chrislau/.gradle/caches/transforms-3/a82db410cebe27c9879106e746eca4ec/transformed/jetified-activity-1.7.2/res/values/values.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,97",
+                        "endColumns": "41,59",
+                        "endOffsets": "92,152"
+                    },
+                    "to": {
+                        "startLines": "77,95",
+                        "startColumns": "4,4",
+                        "startOffsets": "4593,5537",
+                        "endColumns": "41,59",
+                        "endOffsets": "4630,5592"
+                    }
+                },
+                {
+                    "source": "/Users/chrislau/Documents/GitHub/CSCI4998AGJ1/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
@@ -366,23 +383,6 @@
                         "endLines": "111,114",
                         "endColumns": "12,12",
                         "endOffsets": "6612,6781"
-                    }
-                },
-                {
-                    "source": "/Users/chrislau/.gradle/caches/transforms-3/a82db410cebe27c9879106e746eca4ec/transformed/jetified-activity-1.7.2/res/values/values.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,97",
-                        "endColumns": "41,59",
-                        "endOffsets": "92,152"
-                    },
-                    "to": {
-                        "startLines": "77,95",
-                        "startColumns": "4,4",
-                        "startOffsets": "4593,5537",
-                        "endColumns": "41,59",
-                        "endOffsets": "4630,5592"
                     }
                 },
                 {
@@ -1307,7 +1307,7 @@
             "outputFile": "com.example.aifashion.app-merged_res-22:/values-night-v8_values-night-v8.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/chrislau/Desktop/FYP/aifashion/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/chrislau/Documents/GitHub/CSCI4998AGJ1/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
