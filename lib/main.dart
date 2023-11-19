@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
       return;
     }
 
-    executePythonScript('/Users/chrislau/Documents/GitHub/CSCI4998AGJ1/lib/AI.py', ['']/*['_image!.path']*/);
+    executePythonScript('lib/AI.py', ['']/*['_image!.path']*/);
   }
 
   void _retakePhoto() {
