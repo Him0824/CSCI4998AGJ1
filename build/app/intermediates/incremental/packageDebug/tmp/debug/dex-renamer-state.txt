@@ -1,0 +1,4 @@
+#Wed Nov 01 09:57:53 HKT 2023
+base.0=/Users/chrislau/Desktop/FYP/aifashion/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
