@@ -4,6 +4,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'result_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -45,13 +46,19 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  void _usePhoto() {
+  void _usePhoto() async {
     if (_image == null) {
       print('No image selected.');
       return;
     }
 
-    executePythonScript('lib/AI.py', ['']/*['_image!.path']*/);
+    final items = await executePythonScript('lib/AI.py', ['']/*['_image!.path']*/);
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => ResultPage(jsonList: items), // Pass the 'items' list to ResultPage
+      ),
+    );
   }
 
   void _retakePhoto() {
@@ -61,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  Future<void> executePythonScript(String scriptPath, List<String> args) async {
+  Future<List<Map<String, dynamic>>> executePythonScript(String scriptPath, List<String> args) async {
     final url = Uri.parse('http://10.0.2.2:8000/run-python-script');
     final response = await http.post(
       url,
@@ -75,8 +82,13 @@ class _MyHomePageState extends State<MyHomePage> {
     if (response.statusCode == 200) {
       final result = response.body;
       print('Python script result: $result');
+      final temp = jsonDecode(result);
+      final parsedResult = jsonDecode(temp['result']);
+      final items = List<Map<String, dynamic>>.from(parsedResult['result']);
+      return items;
     } else {
       print('Error executing Python script: ${response.statusCode}');
+      return []; // Return an empty list in case of an error
     }
   }
 
