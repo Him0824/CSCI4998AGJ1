@@ -93,9 +93,9 @@
     },
     {
       "name": "http",
-      "rootUri": "file:///Users/chrislau/.pub-cache/hosted/pub.dev/http-0.13.6",
+      "rootUri": "file:///Users/chrislau/.pub-cache/hosted/pub.dev/http-1.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.0"
     },
     {
       "name": "http_parser",
@@ -105,9 +105,9 @@
     },
     {
       "name": "image_picker",
-      "rootUri": "file:///Users/chrislau/.pub-cache/hosted/pub.dev/image_picker-0.8.9",
+      "rootUri": "file:///Users/chrislau/.pub-cache/hosted/pub.dev/image_picker-1.0.4",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "2.19"
     },
     {
       "name": "image_picker_android",
@@ -117,9 +117,9 @@
     },
     {
       "name": "image_picker_for_web",
-      "rootUri": "file:///Users/chrislau/.pub-cache/hosted/pub.dev/image_picker_for_web-2.2.0",
+      "rootUri": "file:///Users/chrislau/.pub-cache/hosted/pub.dev/image_picker_for_web-3.0.1",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "2.19"
     },
     {
       "name": "image_picker_ios",
@@ -290,7 +290,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2023-11-19T18:23:24.444200Z",
+  "generated": "2023-11-21T03:57:59.488065Z",
   "generator": "pub",
   "generatorVersion": "3.2.0"
 }

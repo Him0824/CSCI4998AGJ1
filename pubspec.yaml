@@ -8,8 +8,8 @@ dependencies:
   flutter:
     sdk: flutter
 
-  http: ^0.13.4
-  image_picker: ^0.8.4
+  http: ^1.1.0
+  image_picker: ^1.0.4
 
   permission_handler: ^11.0.1
 

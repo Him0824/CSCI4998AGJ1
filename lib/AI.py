@@ -1,9 +1,9 @@
 import json
 
 def returnList():
-    labels = [{'name':'1'}, 
-              {'name':'2'}, 
-              {'name':'3'}]
+    labels = [{'name':'White T-shirt'}, 
+              {'name':'Black hoodie'}, 
+              {'name':'Jeans'}]
     result = {'result': labels}
     print(json.dumps(result))
 

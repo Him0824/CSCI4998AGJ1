@@ -33,17 +33,23 @@ class _MyHomePageState extends State<MyHomePage> {
   bool _isPhotoTaken = false;
 
   Future<void> _takePhoto() async {
-    final picker = ImagePicker();
-    final pickedImage = await picker.pickImage(source: ImageSource.camera);
+    final status = await Permission.camera.request();
 
-    setState(() {
-      if (pickedImage != null) {
-        _image = File(pickedImage.path);
-        _isPhotoTaken = true;
-      } else {
-        print('No image selected.');
-      }
-    });
+    // if (status.isGranted) {
+      final picker = ImagePicker();
+      final pickedImage = await picker.pickImage(source: ImageSource.camera);
+
+      setState(() {
+        if (pickedImage != null) {
+          _image = File(pickedImage.path);
+          _isPhotoTaken = true;
+        } else {
+          print('No image selected.');
+        }
+      });
+    // } else {
+    //   print('Camera permission denied.');
+    // }
   }
 
   void _usePhoto() async {
