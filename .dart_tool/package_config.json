@@ -188,36 +188,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "permission_handler",
-      "rootUri": "file:///Users/chrislau/.pub-cache/hosted/pub.dev/permission_handler-11.0.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.15"
-    },
-    {
-      "name": "permission_handler_android",
-      "rootUri": "file:///Users/chrislau/.pub-cache/hosted/pub.dev/permission_handler_android-11.1.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.15"
-    },
-    {
-      "name": "permission_handler_apple",
-      "rootUri": "file:///Users/chrislau/.pub-cache/hosted/pub.dev/permission_handler_apple-9.1.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.15"
-    },
-    {
-      "name": "permission_handler_platform_interface",
-      "rootUri": "file:///Users/chrislau/.pub-cache/hosted/pub.dev/permission_handler_platform_interface-3.12.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.14"
-    },
-    {
-      "name": "permission_handler_windows",
-      "rootUri": "file:///Users/chrislau/.pub-cache/hosted/pub.dev/permission_handler_windows-0.1.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "plugin_platform_interface",
       "rootUri": "file:///Users/chrislau/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.7",
       "packageUri": "lib/",
@@ -290,7 +260,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2023-11-21T03:57:59.488065Z",
+  "generated": "2023-11-24T09:49:39.479647Z",
   "generator": "pub",
   "generatorVersion": "3.2.0"
 }

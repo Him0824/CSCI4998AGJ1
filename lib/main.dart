@@ -1,7 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:permission_handler/permission_handler.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'result_page.dart';
@@ -33,9 +32,6 @@ class _MyHomePageState extends State<MyHomePage> {
   bool _isPhotoTaken = false;
 
   Future<void> _takePhoto() async {
-    final status = await Permission.camera.request();
-
-    if (status.isGranted) {
       final picker = ImagePicker();
       final pickedImage = await picker.pickImage(source: ImageSource.camera);
 
@@ -47,9 +43,6 @@ class _MyHomePageState extends State<MyHomePage> {
           print('No image selected.');
         }
       });
-    } else {
-      print('Camera permission denied.');
-    }
   }
 
   void _usePhoto() async {

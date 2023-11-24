@@ -13,8 +13,8 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/chrislau/Documents/GitHub/CSCI4998AGJ1/android/app/src/debug/AndroidManifest.xml:6:5-66
-15-->/Users/chrislau/Documents/GitHub/CSCI4998AGJ1/android/app/src/debug/AndroidManifest.xml:6:22-64
+15-->/Users/chrislau/CSCI4998AGJ1/android/app/src/debug/AndroidManifest.xml:6:5-66
+15-->/Users/chrislau/CSCI4998AGJ1/android/app/src/debug/AndroidManifest.xml:6:22-64
 16
 17    <permission
 17-->[androidx.core:core:1.10.1] /Users/chrislau/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
@@ -68,21 +68,21 @@
 60            android:value="2" />
 61
 62        <provider
-62-->[:image_picker_android] /Users/chrislau/Documents/GitHub/CSCI4998AGJ1/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+62-->[:image_picker_android] /Users/chrislau/CSCI4998AGJ1/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
 63            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-63-->[:image_picker_android] /Users/chrislau/Documents/GitHub/CSCI4998AGJ1/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
+63-->[:image_picker_android] /Users/chrislau/CSCI4998AGJ1/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
 64            android:authorities="com.example.aifashion.flutter.image_provider"
-64-->[:image_picker_android] /Users/chrislau/Documents/GitHub/CSCI4998AGJ1/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+64-->[:image_picker_android] /Users/chrislau/CSCI4998AGJ1/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
 65            android:exported="false"
-65-->[:image_picker_android] /Users/chrislau/Documents/GitHub/CSCI4998AGJ1/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+65-->[:image_picker_android] /Users/chrislau/CSCI4998AGJ1/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
 66            android:grantUriPermissions="true" >
-66-->[:image_picker_android] /Users/chrislau/Documents/GitHub/CSCI4998AGJ1/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+66-->[:image_picker_android] /Users/chrislau/CSCI4998AGJ1/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
 67            <meta-data
-67-->[:image_picker_android] /Users/chrislau/Documents/GitHub/CSCI4998AGJ1/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+67-->[:image_picker_android] /Users/chrislau/CSCI4998AGJ1/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
 68                android:name="android.support.FILE_PROVIDER_PATHS"
-68-->[:image_picker_android] /Users/chrislau/Documents/GitHub/CSCI4998AGJ1/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+68-->[:image_picker_android] /Users/chrislau/CSCI4998AGJ1/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
 69                android:resource="@xml/flutter_image_picker_file_paths" />
-69-->[:image_picker_android] /Users/chrislau/Documents/GitHub/CSCI4998AGJ1/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+69-->[:image_picker_android] /Users/chrislau/CSCI4998AGJ1/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
 70        </provider>
 71
 72        <uses-library

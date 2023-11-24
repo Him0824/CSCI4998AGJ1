@@ -367,7 +367,7 @@
                     }
                 },
                 {
-                    "source": "/Users/chrislau/Documents/GitHub/CSCI4998AGJ1/android/app/src/main/res/values/styles.xml",
+                    "source": "/Users/chrislau/CSCI4998AGJ1/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
@@ -1307,7 +1307,7 @@
             "outputFile": "com.example.aifashion.app-merged_res-22:/values-night-v8_values-night-v8.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/chrislau/Documents/GitHub/CSCI4998AGJ1/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/chrislau/CSCI4998AGJ1/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
