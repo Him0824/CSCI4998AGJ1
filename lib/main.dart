@@ -50,8 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
       print('No image selected.');
       return;
     }
-
-    final items = await executePythonScript('lib/AI.py', ['']/*['_image!.path']*/);
+    final items = await executePythonScript('AI.py', ['']/*['_image!.path']*/);
     await Navigator.push(
       context,
       MaterialPageRoute(
@@ -68,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future<List<Map<String, dynamic>>> executePythonScript(String scriptPath, List<String> args) async {
-    final url = Uri.parse('http://10.0.2.2:8000/run-python-script');
+    final url = Uri.parse('http://104.199.127.2:3389/run-python-script');
     final response = await http.post(
       url,
       headers: {'Content-Type': 'application/json'},
