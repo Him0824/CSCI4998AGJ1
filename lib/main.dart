@@ -46,15 +46,18 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void _usePhoto() async {
-    if (_image == null) {
-      print('No image selected.');
-      return;
-    }
-    final items = await executePythonScript('AI.py', ['']/*['_image!.path']*/);
-    await Navigator.push(
+  if (_image == null) {
+    print('No image selected.');
+    return;
+  }
+
+  final items = await executePythonScript('AI.py', ['']);
+  final jsonResponse = jsonEncode(items);
+
+  await Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => ResultPage(jsonList: items), // Pass the 'items' list to ResultPage
+        builder: (context) => ResultPage(jsonResponse: jsonResponse),
       ),
     );
   }
