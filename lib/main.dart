@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future<List<Map<String, dynamic>>> executePythonScript(String scriptPath, List<String> args) async {
-    final url = Uri.parse('http://104.199.127.2:3389/run-python-script');
+    final url = Uri.parse('http://34.83.20.127:3389/run-python-script');
     final response = await http.post(
       url,
       headers: {'Content-Type': 'application/json'},

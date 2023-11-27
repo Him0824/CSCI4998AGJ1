@@ -22,17 +22,24 @@ class ResultPage extends StatelessWidget {
           final base64Data = imageData['data'];
           final decodedImage = base64Decode(base64Data);
 
-          return Container(
-            height: 80.0, // Set the desired height for the ListTile
-            child: ListTile(
-              title: Text(name),
-              leading: Image.memory(
-                decodedImage,
-                fit: BoxFit.contain, // Adjust the fit property
-                width: 80.0, // Set the desired width for the image
-                height: 80.0,
+          return Column(
+            children: [
+              Container(
+                height: 300.0, // Set the desired height for the image
+                child: Image.memory(
+                  decodedImage,
+                  fit: BoxFit.cover, // Adjust the fit property
+                ),
               ),
-            ),
+              SizedBox(height: 8.0), // Add spacing between the image and name
+              Text(
+                name,
+                style: TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
           );
         },
       ),
