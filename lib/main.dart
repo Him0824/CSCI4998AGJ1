@@ -126,9 +126,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   child: Image.file(
                     _image!,
-                    height: 300.0,
                     width: 300.0,
-                    fit: BoxFit.cover,
+                    fit: BoxFit.contain,
                   ),
                 )
               : Text('No image selected'),
