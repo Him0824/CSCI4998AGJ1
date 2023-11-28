@@ -15,7 +15,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'AIFashion',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.indigo[800],
+        scaffoldBackgroundColor: Colors.grey[200],
+        appBarTheme: AppBarTheme(
+          color: Colors.indigo[800],
+        ),
       ),
       home: MyHomePage(),
     );
@@ -32,29 +36,31 @@ class _MyHomePageState extends State<MyHomePage> {
   bool _isPhotoTaken = false;
 
   Future<void> _takePhoto() async {
-      final picker = ImagePicker();
-      final pickedImage = await picker.pickImage(source: ImageSource.camera);
+    final picker = ImagePicker();
+    final pickedImage = await picker.pickImage(source: ImageSource.camera);
 
-      setState(() {
-        if (pickedImage != null) {
-          _image = File(pickedImage.path);
-          _isPhotoTaken = true;
-        } else {
-          print('No image selected.');
-        }
-      });
+    setState(() {
+      if (pickedImage != null) {
+        _image = File(pickedImage.path);
+        _isPhotoTaken = true;
+      } else {
+        print('No image selected.');
+      }
+    });
   }
 
   void _usePhoto() async {
-  if (_image == null) {
-    print('No image selected.');
-    return;
-  }
+    if (_image == null) {
+      print('No image selected.');
+      return;
+    }
 
-  final items = await executePythonScript('AI.py', ['']);
-  final jsonResponse = jsonEncode(items);
+    print(_image);
 
-  await Navigator.push(
+    final items = await executePythonScript('AI.py', ['']);
+    final jsonResponse = jsonEncode(items);
+
+    await Navigator.push(
       context,
       MaterialPageRoute(
         builder: (context) => ResultPage(jsonResponse: jsonResponse),
@@ -69,7 +75,8 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  Future<List<Map<String, dynamic>>> executePythonScript(String scriptPath, List<String> args) async {
+  Future<List<Map<String, dynamic>>> executePythonScript(
+      String scriptPath, List<String> args) async {
     final url = Uri.parse('http://34.83.20.127:3389/run-python-script');
     final response = await http.post(
       url,
@@ -97,15 +104,34 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AIFashion'),
+        title: Text(
+          'AIFashion',
+          style: TextStyle(
+            color: Colors.white, // Set the text color to white
+          ),
+        ),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             _isPhotoTaken
-                ? Image.file(_image!)
-                : Text('No image selected'),
+              ? Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.indigo,
+                      width: 5.0,
+                    ),
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                  child: Image.file(
+                    _image!,
+                    height: 200.0,
+                    width: 200.0,
+                    fit: BoxFit.cover,
+                  ),
+                )
+              : Text('No image selected'),
             SizedBox(height: 16.0),
             if (_isPhotoTaken)
               Row(
