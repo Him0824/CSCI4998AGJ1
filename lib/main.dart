@@ -126,8 +126,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   child: Image.file(
                     _image!,
-                    height: 200.0,
-                    width: 200.0,
+                    height: 300.0,
+                    width: 300.0,
                     fit: BoxFit.cover,
                   ),
                 )
