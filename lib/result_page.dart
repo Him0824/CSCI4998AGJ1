@@ -12,7 +12,12 @@ class ResultPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Result Page'),
+        title: Text(
+          'Search Result',
+          style: TextStyle(
+            color: Colors.white, // Set the text color to white
+          ),
+        ),
       ),
       body: ListView.builder(
         itemCount: items.length,

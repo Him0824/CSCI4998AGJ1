@@ -139,7 +139,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   ElevatedButton(
                     onPressed: _usePhoto,
-                    child: Text('Use'),
+                    child: Text('Search'),
                   ),
                   SizedBox(width: 16.0),
                   ElevatedButton(
